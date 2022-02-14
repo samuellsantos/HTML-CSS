@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este imagem em dispositivos diferentes</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagem/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagem/imagem-m.png" type="image/png">
+        <img src="Imagem/imagem-g.png" alt="imagem dinâmica">
+    </picture>
+</body>
+</html>

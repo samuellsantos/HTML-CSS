@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color: gray;
+            font-family: sans-serif;
+        }
+
+        header{
+            background-color: white;
+            padding: 3px;
+            margin: 10px 5px;
+            border-radius: 10px;
+        }
+        header > nav{
+            background-color: rgb(122, 120, 120);
+            color: white;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.377);
+            border-radius: 5px;
+            
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 5px;
+            margin-top: 3px;
+            border-radius: 0px 20px;
+            box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.281);
+        }
+
+        section{
+            background-color: rgb(179, 176, 176);
+            border-radius: 10px;
+        }
+        section > aside{
+            background-color: rgb(122, 120, 120);
+            font-weight: bold;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            border:5px solid indianred;
+            margin: 5px;
+        }
+        footer:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">links</a>
+            <a href="#">links</a>
+            <a href="#">links</a>
+            <a href="#">links</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section id="assuntos">
+
+            </section>
+            <section id="notícias">
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id fugit, architecto dolores accusantium a perferendis odio nemo accusamus consectetur esse suscipit, aut, consequatur voluptatum debitis natus eos voluptate ratione omnis.</p>
+                <aside>
+                    <p>Artigo escrito por Samuel Santos</p>
+                </aside>
+            </section>
+        </article>
+    </main>
+    <footer>
+        Desenvolvido por SMK
+    </footer>
+</body>
+</html>

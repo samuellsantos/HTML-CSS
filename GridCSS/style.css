@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.25em;
+}
+body {
+	font-family: monospace;
+	color: #333;
+	margin: 0px;
+	padding-bottom: 60px;
+}
+
+.grid{
+    max-width: 400px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+.item{
+    background-color: tomato;
+    text-align: center;
+    font-weight: 600;
+    margin: 5px;
+    font-size: 1.5em;
+}
+body > div {
+	padding: 40px 0;
+}
+body > div:nth-of-type(even) {
+	background: rgba(0,0,0,.03);
+}
+
+.grid{
+    display: grid;
+}
+.grid-template-columns-1{
+    grid-template-columns: 100px 100px 100px 100px;
+}

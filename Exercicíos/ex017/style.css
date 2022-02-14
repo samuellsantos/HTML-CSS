@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+body{
+    font-family: sans-serif;
+    /*16 px geralmente = 1em*/
+    font-size: 1em;
+}
+
