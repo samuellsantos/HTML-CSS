@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: rgba(255, 232, 235, 0.521);
+        }
+        h1{
+            text-align: center;
+        }
+        table{
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 300px;
+            font-size: 1.2em;
+            background-color: rgb(224, 255, 255);
+        }
+        td{
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclando tabelas</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2" style="background-color: lightcoral;">B</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: rgb(252, 252, 141);">D</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td >G</td>
+            <td>H</td>
+            <td rowspan="2" style="background-color: lightgreen;">I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+        </tr>
+    </table>
+</body>
+</html>
