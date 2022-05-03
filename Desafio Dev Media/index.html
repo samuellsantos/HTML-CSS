@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio DevMedia</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #loading{
+            width: 200px;
+            height: 200px;
+            background: transparent;
+            border-radius: 50%;
+            border: 40px solid white;
+            border-top: 40px solid transparent;
+            animation: load 2s linear infinite ;
+        }
+        @keyframes load{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="loading" onmouseenter="mudarcor()" onmouseout="out()">
+
+    </div>
+
+    <script>
+        var circulo = document.getElementById('loading')
+        function mudarcor(){
+            circulo.style.border = '40px solid rgb(148, 4, 184)'
+            circulo.style.borderTop = '40px solid transparent'
+        }
+        function out(){
+            circulo.style.border = ' 40px solid white'
+            circulo.style.borderTop = '40px solid transparent'
+        }
+    </script>
+</body>
+</html>
