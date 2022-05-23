@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+    background-image: url(BMW1.png);
+    background-size: cover;
+    background-position: center;
+    transition: background-image .4s;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  20px 100px;
+}
+
+.logo{
+    width: 300px;
+}
+
+#test-drive{
+    text-decoration: none;
+    color: #fff;
+    background: rgb(51, 51, 51);
+    font-weight: 500;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 20px;
+}
+
+main{
+    margin-top: 100px;
+    padding: 0px 100px;
+
+}
+main h2{
+    color: red;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+main h1{
+    color: rgb(51, 51, 51);
+    font-size: 8em;
+}
+main p{
+    width: 500px;
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+h3{
+    padding-top: 50px;
+    margin: 0px 100px;  
+}
+.change-color{
+    display: flex;
+    padding: 0px 100px;
+}
+
+.change-color div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(119, 119, 119);
+    margin-right: 20px;
+    cursor: pointer;
+}
+.change-color #red{
+    background-color: red;
+}
+.change-color #blue{
+    background-color: blue;
+}
+.change-color #black{
+    background-color: black;
+}
