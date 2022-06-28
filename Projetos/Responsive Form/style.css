@@ -16,8 +16,7 @@
 }
 
 .image{
-    width: 450px;
-
+    max-width: 450px;
 }
 .image img{
     width: 100%;
@@ -26,12 +25,11 @@
 }
 
 .form{
-    width: 500px;
-    height: 600px;
+    max-width: 500px;
+    height: auto;
     background-color: #fff;
     padding: 60px;
     border-radius: 5px;
-
 }
 .form h2{
     font-size: 1.8em;
@@ -112,4 +110,18 @@
     font-weight: 500;
     font-size: 1.1em;
     cursor: pointer;
+}
+
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 880px){
+    .container{
+        height: 100%;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 360px){
+    .form{
+        padding: 30px;
+    }
 }
