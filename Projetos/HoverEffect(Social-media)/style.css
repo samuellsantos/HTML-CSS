@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+    position: relative;
+}
+.container img{
+    width: 50px;
+    height: 50px;
+}
+.container div{
+    padding: 20px;
+    border-radius: 8px;
+    align-items: center;
+    transition: .7s;
+    cursor: pointer;
+    
+
+}
+.container div:hover{
+    transform: translateY(-30px);
+}
+
+
+
+/*---------- INSTAGRAM ----------*/
+
+.instagram{
+    background-color: rgb(190, 0, 159);
+    box-shadow: 2px 2px 2px 3px rgba(190, 0, 158, 0.178);
+    position: relative;
+}
+.container #instagram{
+    display: block;
+    margin: 10px auto;
+    position: absolute;
+    z-index: -10;
+    left: 32px;
+    top: 85px;
+    font-weight: bold;
+}
+
+
+/*---------- TWITTER ---------*/
+
+.twitter{
+    background-color: rgb(73, 73, 231);
+    box-shadow: 2px 2px 2px 3px rgba(73, 73, 231, 0.171);
+}
+.container #twitter{
+    display: block;
+    margin: 10px auto;
+    position: absolute;
+    z-index: -10;
+    left: 182px;
+    top: 85px;
+    font-weight: bold;
+}
+
+
+/*---------- GITHUB ----------*/
+.github{
+    background-color: #000;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.171);
+}
+.container #github{
+    display: block;
+    margin: 10px auto;
+    position: absolute;
+    z-index: -10;
+    left: 325px;
+    top: 85px;
+    font-weight: bold;
+}
+
+/*----------  WHATSAPP ---------- */
+
+.whatsapp{
+    background-color: rgb(5, 190, 5);
+    box-shadow: 2px 2px 2px 3px rgba(5, 190, 5, 0.178);
+}
+.container #whatsapp{
+    display: block;
+    margin: 10px auto;
+    position: absolute;
+    z-index: -10;
+    left: 455px;
+    top: 85px;
+    font-weight: bold;
+}
+
+
