@@ -45,5 +45,5 @@ function jujuba(){
     let playbtn = document.getElementById('playbtn').src = "images/playjujuba.png"
     let name = document.getElementById('name')
     name.innerHTML = 'jujuba'
-    name.style.fontSize = '8em'
+    name.style.fontSize = '7em'
 }
