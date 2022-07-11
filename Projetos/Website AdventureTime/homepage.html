@@ -30,16 +30,16 @@
 
         <main>
             <div class="infocharacter">
-                <h1><span>f</span>inn</h1>
+                <h1 id="name"><span>f</span>inn</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consequuntur, vel porro maiores doloremque impedit eligendi error quae itaque voluptates totam voluptas officia ducimus ipsam recusandae. Expedita, laudantium aspernatur! Nemo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero eum asperiores commodi. Laudantium itaque, veritatis adipisci officia officiis a recusandae, magnam ad sequi deserunt nostrum nam repudiandae, odit quod voluptatibus?
                 </p>
             </div>
             <div class="playButton">
-                <img src="images/Play.png" alt="Play">
+                <img src="images/playfinn.png" alt="Play" id="playbtn">
             </div>
             <div class="character">
-                <img src="images/Finn.png" alt="Character">
+                <img src="images/Finn.png" alt="Character" id="character">
             </div>
         </main>
 
@@ -49,16 +49,16 @@
             </h2>
             <div class="characters">
                 <div class="finn">
-                    <img src="images/Finn-icon.png">
+                    <img src="images/Finn-icon.png" id="finnIcon">
                 </div>
-                <div class="finn">
-                    <img src="images/Jake-icon.png">
+                <div class="jake">
+                    <img src="images/Jake-icon.png" id="jakeIcon" onclick="jake()">
                 </div>
-                <div class="finn">
-                    <img src="images/Marcelinne-icon.png">
+                <div class="marceline"> 
+                    <img src="images/Marcelinne-icon.png" id="marcelinneIcon" onclick="marceline()">
                 </div>
-                <div class="finn">
-                    <img src="images/Jujuba-icon.png">
+                <div class="jujuba">
+                    <img src="images/Jujuba-icon.png" id="jujubaIcon" onclick="jujuba()">
                 </div>
             </div>
         </footer>
@@ -69,5 +69,10 @@
             </h2>
         </div>
     </div>
+
+
+
+
+    <script src="changecharacter.js"></script>
 </body>
 </html>
