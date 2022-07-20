@@ -32,7 +32,7 @@ body{
 }
 .container nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     overflow: hidden;
 }
@@ -269,6 +269,9 @@ footer .characters img:hover{
 }
 
 @media only screen and (max-width: 890px){
+    body{
+        overflow: hidden;
+    }
     .menu img{
         display: block;
     }
@@ -281,16 +284,17 @@ footer .characters img:hover{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        right: -200px;
+        top: -400px;
+        right: 0;
         transition: all ease-in-out .5s;
+        display: none;
     }
     main .infocharacter h1{
-        font-size: 6em;
+        font-size: 9em;
         text-align: center;
     }
     main .infocharacter p{
-        font-size: .8em;
-        width: 400px;
+        width: 80%;
     }
 
 
