@@ -21,6 +21,7 @@ body{
     height: 180vh;
     background: url(images/Background.png) no-repeat bottom center scroll;
     background-size: cover;
+    overflow: hidden;
 }
 /* --- WEBPAGE --- */
 .container{
