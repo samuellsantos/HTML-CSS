@@ -15,7 +15,7 @@ function finn(){
     let playbtn = document.getElementById('playbtn').src = "images/playfinn.png"
     let name = document.getElementById('name')
     name.innerHTML = 'Finn'
-    name.style.fontSize = '10em'
+    let characterIm = document.getElementById('character').style.width = '100%'
 
 }
 function jake(){
@@ -25,25 +25,40 @@ function jake(){
     document.documentElement.style.setProperty('--secondcolor', "#FFD12D")
     let name = document.getElementById('name')
     name.innerHTML = 'jake'
-    name.style.fontSize = '10em'
+
+    let characterIm = document.getElementById('character').style.width = '100%'
     
 }
 function marceline(){
-    let characterImg = document.getElementById('character').src = "images/marceline.png"
+    let characterImg = document.getElementById('character').src = "images/marceline2.webp"
     document.documentElement.style.setProperty('--firstcolor', "#FFD12D")
     document.documentElement.style.setProperty('--secondcolor', "#141534")
     let playbtn = document.getElementById('playbtn').src = "images/playmarceline.png"
     let name = document.getElementById('name')
     name.innerHTML = 'marceline'
     name.style.fontSize = '7em'
+    let characterIm = document.getElementById('character').style.width = '95%'
     
 }
 function jujuba(){
-    let characterImg = document.getElementById('character').src = "images/jujuba.png"
+    let characterImg = document.getElementById('character').src = "images/Jujuba2.png"
+    document.documentElement.style.setProperty('--firstcolor', "#FFD12D")
+    document.documentElement.style.setProperty('--secondcolor', "#CE24C7")
+    let playbtn = document.getElementById('playbtn').src = "images/playjujuba.png"
+    let name = document.getElementById('name')
+    name.innerHTML = 'Jujuba'
+    let characterIm = document.getElementById('character').style.width = '78%'
+    
+}
+
+/* function jujuba(){
+    let characterImg = document.getElementById('character').src = "images/Jujuba.png"
+    let characterIm = document.getElementById('character').style.padding = '50px 80px'
     document.documentElement.style.setProperty('--firstcolor', "#FFD12D")
     document.documentElement.style.setProperty('--secondcolor', "#CE24C7")
     let playbtn = document.getElementById('playbtn').src = "images/playjujuba.png"
     let name = document.getElementById('name')
     name.innerHTML = 'jujuba'
-    name.style.fontSize = '7em'
 }
+
+ */

@@ -11,22 +11,21 @@
 }
 body{
     width: 100%;
-    height: 100vh;
+    height: 180vh;
     background-color: var(--firstcolor);
     position: relative;
     overflow: hidden;
-    
 }
 .imageBG{
     width: 100%;
-    height: 100vh;
+    height: 180vh;
     background: url(images/Background.png) no-repeat bottom center scroll;
     background-size: cover;
 }
 /* --- WEBPAGE --- */
 .container{
     width: 100%;
-    height: 100vh;
+    height: 180vh;
     background-color: var(--secondcolor);
     border-radius: 600px 0 0 0;
     padding: 0 45px;
@@ -35,6 +34,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
 }
 
 .container nav .navlinks ul{
@@ -102,12 +102,20 @@ body{
     font-weight: 700;
     font-size: 1.2em;
     text-transform: uppercase;
-
 }
 .container nav .login:hover{
     transform: scale(105%);
 }
-
+.menu img, .closeMenu img{
+    width: 30px;
+    height: auto;
+    display: none;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+}
+.closeMenu img{
+    width: 15px;
+}
 
 
 /* Content page */
@@ -118,7 +126,6 @@ main{
 }
 
 main .infocharacter h1{
-   /*  margin-left: 180px; */
     font-size: 10em;
     text-transform: uppercase;
     color: var(--firstcolor);
@@ -131,13 +138,12 @@ main .infocharacter p{
 }
 main .character img{
     max-width: 550px;
-    transition: .5s all;
+    min-width: 350px;
 }
 
 main .playButton{
     cursor: pointer;
     position: relative;
-
 }
 main .playButton::after{
     content: '';
@@ -201,59 +207,91 @@ footer .characters img:hover{
 }
 
 
-@media only screen and (max-width:1320px) {
-    .container nav .navlinks ul li a {
-        font-size: 1em;
-        color: red;
-    }
-    #home{ /* -- link home selected */
-        padding: 15px 35px;
-    }
-    .container nav .login{
-        padding: 15px 35px;
-    }
-    .container nav .navlinks ul{
-        gap: 50px;
-    }
-    .container nav{
-        justify-content: space-around;
+@media only screen and (max-width:1340px) {
+    body{
+        height: 180vh;
+        overflow: scroll;
     }
     main{
+        justify-content: center;
+        flex-direction: column;
         margin-top: 100px;
-        justify-content: space-around;
+        
     }
-    main .character img{
-        max-width: 400px;
-        transition: .5s all;
+    main .infocharacter{
+        order: 2;
+        margin: -180px;
+        z-index: 10;
+    }main .infocharacter p{
+        font-size: 1.3em;
+        text-align: center;
     }
-    main .infocharacter h1{
-        /*  margin-left: 180px; */
-         font-size: 8em;
-         text-transform: uppercase;
-         color: var(--firstcolor);
-     }
-     
-     main .infocharacter p{
-         width: 450px;
-     }
-     main .playButton img{
-        width: 100px;
-    
+    main .character{
+        order: 1;
+        z-index: 20;
     }
+    main .playButton{
+        order: 4;
+        margin-top: 250px;
+    }
+
+
+    /* PLAY BTN */
     main .playButton::after{
-        content: '';
-        width: 5px;
-        height: 50px;
-        border-radius: 5px;
-        background-color: var(--firstcolor);
-        display: block;
-        position: absolute;
-        left: 46%;
-        top: 120px;
+        width: 150px;
+        height: 5px;
+        left: -200px;
+        top: 50%;
     }
     main .playButton::before{
-        width: 5px;
-        height: 50px;
-        top: -60px;
+        width: 150px;
+        height: 5px;
+        left: 185px;
+        top: 50%;
     }
+}
+
+@media only screen and (max-width: 1080px){
+    .container nav .navlinks ul li a {
+        font-size: 1em;
+    }
+
+    .container nav .login a{
+        font-size: 1em;
+    }
+    .container nav .navlinks ul{
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width: 890px){
+    .menu img{
+        display: block;
+    }
+    .container nav {
+        justify-content: space-around;
+    }
+    .container nav .navlinks ul{
+        position: absolute;
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        right: -200px;
+        transition: all ease-in-out .5s;
+    }
+    main .infocharacter h1{
+        font-size: 6em;
+        text-align: center;
+    }
+    main .infocharacter p{
+        font-size: .8em;
+        width: 400px;
+    }
+
+
 }

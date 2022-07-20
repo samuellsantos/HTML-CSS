@@ -16,7 +16,12 @@
                 <img src="images/LOGO.png" alt="logo adventure time">
             </div>
                 <div class="navlinks">
-                    <ul>
+                    <ul id="hideMenu">
+                        <li>
+                            <div class="closeMenu">
+                                <img src="images/close.svg" id="close" onclick="closeMENU()">
+                            </div>
+                        </li>
                         <li><a href="#" id="home">home</a></li>
                         <li><a href="#">characters</a></li>
                         <li><a href="#">all episodes</a></li>
@@ -26,6 +31,10 @@
             <div class="login">
                 <a href="#">login</a>
             </div>
+            <div class="menu">
+                <img src="images/menu.svg" id="menu">
+            </div>
+
         </nav>
 
 
@@ -77,5 +86,6 @@
         </div>
         
     <script src="changecharacter.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>
