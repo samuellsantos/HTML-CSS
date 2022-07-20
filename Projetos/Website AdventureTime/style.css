@@ -19,7 +19,7 @@ body{
 .imageBG{
     width: 100%;
     height: 180vh;
-    background: url(images/Background.png) no-repeat bottom center scroll;
+    background: url(images/Background.png) repeat bottom center;
     background-size: cover;
     overflow: hidden;
 }
@@ -124,6 +124,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 main .infocharacter h1{
@@ -270,9 +271,7 @@ footer .characters img:hover{
 }
 
 @media only screen and (max-width: 890px){
-    body{
-        overflow: hidden;
-    }
+
     .menu img{
         display: block;
     }
@@ -288,14 +287,13 @@ footer .characters img:hover{
         top: -400px;
         right: 0;
         transition: all ease-in-out .5s;
-        display: none;
     }
     main .infocharacter h1{
         font-size: 9em;
         text-align: center;
     }
     main .infocharacter p{
-        width: 80%;
+        max-width: 300px;
     }
 
 
