@@ -17,7 +17,7 @@ body{
 
 header{
     width: 100%;
-    height: 65vh;
+    height: 66.5vh;
     background-color: #404EED;
 }
 
@@ -30,6 +30,7 @@ header nav{
 }
 header nav .logo{
     width: 130px;
+    cursor: pointer;
 }
 header nav .links ul{
     display: flex;
@@ -77,7 +78,7 @@ header .contentHeader {
     align-items: center;
     flex-direction: column;
     color: #fff;
-    margin-top: 140px;
+    margin-top: 155px;
     position: relative;
     overflow: hidden;
 }
@@ -88,7 +89,7 @@ header .contentHeader #mountains{
 }
 header .contentHeader #image-left{
     position: absolute;
-    right: 70%;
+    right: 68.4%;
     bottom: 0;
     z-index: 100;
 }
@@ -114,7 +115,7 @@ header .contentHeader p{
 header .contentHeader #mountains{
     width: 100%;
 }
-header .contentHeader .downloadLinks{
+.downloadLinks{
     margin-top: 40px;
     display: flex;
     justify-content: center;
@@ -122,7 +123,7 @@ header .contentHeader .downloadLinks{
     gap: 30px;
 }
 
-header .contentHeader .downloadLinks a{
+.downloadLinks a{
     padding: 20px 30px;
     color: #fff;
     border-radius: 80px;
@@ -133,7 +134,7 @@ header .contentHeader .downloadLinks a{
     z-index: 100;
     margin-bottom: 85px;
 }
-header .contentHeader .downloadLinks a:first-child{
+.downloadLinks a:first-child{
     color: #23272A;
 }
 header .contentHeader .downloadLinks a:last-child{
@@ -150,3 +151,133 @@ header .contentHeader .downloadLinks a:last-child:hover{
     background-color: #323535;
     box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.219);
 }
+
+
+/* MAIN */
+
+main :nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 100px;
+}
+main :nth-child(1) .textcontent h1{
+    width: 370px;
+    font-size: 2.8em;
+    color: #23272A;
+}
+main :nth-child(1) .textcontent p{
+    width: 410px;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 50px 0 90px 0;
+}
+
+main .secondsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+    gap: 100px;
+    margin-top: 55px;
+    padding: 100px 0;
+}
+main .secondsection .textcontentSectionTwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 30px;
+}
+main .secondsection .textcontentSectionTwo h1{
+    font-size: 2.8em;
+    color: #23272A;
+    width: 380px;
+    line-height: 60px;
+}
+main .secondsection .textcontentSectionTwo p{
+    width: 390px;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+
+main .thirdsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    padding: 150px 0;
+}
+
+main .thirdsection .textcontentThirdSection h1{
+    font-size: 2.8em;
+    color: #23272A;
+    width: 380px;
+    line-height: 50px;
+}
+
+main .thirdsection .textcontentThirdSection p{
+    width: 350px;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+main .foursection{
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+main .foursection .textcontentFourSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+main .foursection .textcontentFourSection h1{
+    font-family: "Arkit";
+    font-size: 2.5em;
+    line-height: 45px;
+    color: #23272A;
+}
+main .foursection .textcontentFourSection p{
+    width: 1050px;
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 30px;
+}
+main .foursection img{
+    width: 1150px;
+}
+
+.download{
+    position: relative;
+}
+.download #stars{
+    width: 800px;
+    height: auto;
+    position: absolute;
+    right: -300px;
+    top: 0;
+}
+.download h1{
+    color: #23272A;
+}
+
+.download .downloadLinks a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #404EED;
+    color: #fff;
+
+}
+
