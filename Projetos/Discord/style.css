@@ -19,6 +19,7 @@ header{
     width: 100%;
     height: 66.5vh;
     background-color: #404EED;
+    overflow: hidden;
 }
 
 header nav{
@@ -53,6 +54,7 @@ header nav .loginBtn a{
     border-radius: 30px;
     font-size: .8em;
 }
+
 
 /* HOVER EFFECTS NAV */
 header nav .links ul li a:hover{
@@ -271,13 +273,22 @@ main .foursection img{
     color: #23272A;
 }
 
-.download .downloadLinks a{
+.download a{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #404EED;
     color: #fff;
-
+    padding: 15px 10px;
+    text-align: center;
+    border-radius: 90px;
+    margin: 30px 0;
+    text-decoration: none;
+    transition: .5s;
+}
+.download a:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.39);
+    background-color: #5e6ae9;
 }
 
