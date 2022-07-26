@@ -22,13 +22,13 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 90px;
 }
 
 .container h1{
     font-size: 4em;
     text-transform: uppercase;
     position: relative;
+    margin-bottom: 30px;
 }
 .container h1::after{
     content: '';
@@ -51,9 +51,18 @@ body{
     left: 65%;
     border-radius: 5px;
 }
+.container p{
+    color: #AD00FF;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
 .container .list{
     width: 80%;
-    height: 50%;
+    min-height: 20%;
+    max-height: 80%;
     background-color: #fff;
     border-radius: 30px;
     display: flex;
@@ -61,6 +70,7 @@ body{
     flex-direction: column;
     padding: 40px;
     font-weight: bold;
+    margin-bottom: 80px;
 }
 .container .list ul li{
     list-style: none;

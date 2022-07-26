@@ -27,7 +27,10 @@ function adicionarAlista(){
         document.querySelectorAll('li').forEach(item => {
             item.addEventListener('click', event => {
               item.style.textDecoration = 'line-through' 
-
+              item.style.color = '#AD00FF'
+                setInterval(()=>{
+                    item.style.display = 'none'
+                },2000)
             })
           })
 
