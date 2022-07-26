@@ -8,6 +8,7 @@ const btn = document.getElementById('btn')
 btn.addEventListener('click', adicionarAlista)
 
 
+
 function adicionarAlista(){
     if(text.value.length == 0){
         alert('Você não adicionou nenhuma task')
@@ -23,8 +24,26 @@ function adicionarAlista(){
         lista.appendChild(paragrafo);
     
         text.value = ""
+        document.querySelectorAll('li').forEach(item => {
+            item.addEventListener('click', event => {
+              item.style.textDecoration = 'line-through' 
+
+            })
+          })
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
