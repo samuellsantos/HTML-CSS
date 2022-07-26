@@ -59,12 +59,13 @@ body{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px;
     font-weight: bold;
 }
 .container .list ul li{
     list-style: none;
     color: #000;
+    cursor: pointer;
 }
 .container .text {
     width: 80%;
